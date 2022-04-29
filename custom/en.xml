@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='utf-8'?>
+<vars xmlns="http://www.idiominc.com/opentopic/vars">
+
+  <!-- note image paths -->
+    <!-- Image path to use for a note of "note" type. -->
+    <variable id="note Note Image Path">com.nokia.nswtc.pdf.art/note.svg</variable>
+
+    <!-- Image path to use for a note of "notice" type. -->
+    <variable id="notice Note Image Path">com.nokia.nswtc.pdf.art/notice.svg</variable>
+
+    <!-- Image path to use for a note of "attention" type. -->
+    <variable id="attention Note Image Path">com.nokia.nswtc.pdf.art/note.svg</variable>
+
+    <!-- Image path to use for a note of "warning" type. -->
+    <variable id="warning Note Image Path">com.nokia.nswtc.pdf.art/warning.svg</variable>
+
+    <!-- Image path to use for a note of "caution" type. -->
+    <variable id="caution Note Image Path">com.nokia.nswtc.pdf.art/warning.svg</variable>
+
+    <!-- Image path to use for a note of "danger" type. -->
+    <variable id="danger Note Image Path">com.nokia.nswtc.pdf.art/warning.svg</variable>
+
+    <!-- Image path to use for a note of "fastpath" type. -->
+    <variable id="fastpath Note Image Path">com.nokia.nswtc.pdf.art/tip.svg</variable>
+
+    <!-- Image path to use for a note of "important" type. -->
+    <variable id="important Note Image Path">com.nokia.nswtc.pdf.art/note.svg</variable>
+
+    <!-- Image path to use for a note of "remember" type. -->
+    <variable id="remember Note Image Path">com.nokia.nswtc.pdf.art/note.svg</variable>
+
+    <!-- Image path to use for a note of "restriction" type. -->
+    <variable id="restriction Note Image Path">com.nokia.nswtc.pdf.art/warning.svg</variable>
+
+    <!-- Image path to use for a note of "tip" type. -->
+    <variable id="tip Note Image Path">com.nokia.nswtc.pdf.art/tip.svg</variable>
+
+    <!-- Image path to use for a note of "other" type. -->
+    <variable id="other Note Image Path">com.nokia.nswtc.pdf.art/note.svg</variable>
+
+    <!-- header/footer items-->   <!-- Added for DOCTOOLS-109-->
+    <variable id="CustomHeaderLeft"> <param ref-name="title" /> | I am custom title 1.</variable>
+  <variable id="CustomHeaderCenter"> | I am custom title 2.</variable>
+  <variable id="CustomHeaderRight"> <param ref-name="topic"/> | I am custom title 3.</variable>
+
+    <variable id="CustomFooterLeft"><param ref-name="docnumber" /> | I am custom docnumber.</variable>
+    <variable id="CustomFooterCenter"><param ref-name="copyright"/> | I am custom copyright.</variable>
+    <variable id="CustomFooterRight"><param ref-name="pagenum" /> | I am custom pagenum</variable>
+
+
+<!-- original ones -->
+<variable id="Body first header"><param ref-name="copyright" /> | <param ref-name="folio-with-total" /> | <param ref-name="chapter" /></variable>
+<variable id="Body odd header"><param ref-name="copyright" /> | <param ref-name="folio-with-total" /> | <param ref-name="chapter" /></variable>
+<variable id="Body even header" />
+<variable id="Preface odd header"><param ref-name="copyright" /> | <param ref-name="folio-with-total" /> | <param ref-name="chapter" /></variable>
+<variable id="Preface even header" />
+<variable id="Preface first header"><param ref-name="copyright" /> | <param ref-name="folio-with-total" /> | <param ref-name="chapter" /></variable>
+<variable id="Toc odd header"><param ref-name="copyright" /> | <param ref-name="folio-with-total" /> | <param ref-name="chapter" /></variable>
+<variable id="Toc even header" />
+<variable id="Index odd header"><param ref-name="copyright" /> | <param ref-name="folio-with-total" /> | <param ref-name="chapter" /></variable>
+<variable id="Index even header" />
+<variable id="Glossary odd header"><param ref-name="copyright" /> | <param ref-name="folio-with-total" /> | <param ref-name="chapter" /></variable>
+<variable id="Glossary even header" />
+<variable id="Body odd footer"><param ref-name="title" /> | <param ref-name="chapter" /> | <param ref-name="folio-with-total" /> | <param ref-name="folio" /></variable>
+<variable id="Body even footer" />
+<variable id="Body first footer"><param ref-name="title" /> | <param ref-name="chapter" /> | <param ref-name="folio-with-total" /> | <param ref-name="folio" /></variable>
+<variable id="Preface odd footer"><param ref-name="title" /> | <param ref-name="chapter" /> | <param ref-name="folio-with-total" /> | <param ref-name="folio" /></variable>
+<variable id="Preface even footer" />
+<variable id="Preface first footer"><param ref-name="title" /> | <param ref-name="chapter" /> | <param ref-name="folio-with-total" /> | <param ref-name="folio" /></variable>
+<variable id="Toc odd footer"><param ref-name="title" /> | <param ref-name="chapter" /> | <param ref-name="folio-with-total" /> | <param ref-name="folio" /></variable>
+<variable id="Toc even footer" />
+<variable id="Index odd footer"><param ref-name="title" /> | <param ref-name="chapter" /> | <param ref-name="folio-with-total" /> | <param ref-name="folio" /></variable>
+<variable id="Index even footer" />
+<variable id="Glossary odd footer"><param ref-name="title" /> | <param ref-name="chapter" /> | <param ref-name="folio-with-total" /> | <param ref-name="folio" /></variable>
+<variable id="Glossary even footer" />
+<variable id="Ordered List Number 1"><param ref-name="number" />. </variable>
+<variable id="Ordered List Number 2"><param ref-name="number" />. </variable>
+<variable id="Ordered List Number 3"><param ref-name="number" />. </variable>
+<variable id="Ordered List Number 4"><param ref-name="number" />. </variable>
+<variable id="Ordered List Format 1">1</variable>
+<variable id="Ordered List Format 2">1</variable>
+<variable id="Ordered List Format 3">1</variable>
+<variable id="Ordered List Format 4">1</variable>
+<variable id="Unordered List bullet 1">&#x2022;</variable>
+<variable id="Unordered List bullet 2">&#x2013;</variable> <!-- changed per DOCTOOLS-592-->
+<variable id="Unordered List bullet 3">&#x2022;</variable>
+<variable id="Unordered List bullet 4">&#x2013;</variable> <!-- changed per DOCTOOLS-592, for symmetry-->
+<!-- task labels taken from NSN en.xml file -->
+    <!--Label for a step with importance="optional"-->
+    <variable id="Optional Step">Optional:</variable>
+
+    <!--Labels for task sections-->
+    <!-- 2011-35-04 Eero: Modified Task Prereq and Task Context; added Task Or. -->
+    <variable id="Task Or">Or</variable>
+    <variable id="Task Prereq">Prerequisites</variable>
+    <variable id="Task Context">About this task</variable>
+    <variable id="Task Steps">Procedure</variable>
+    <variable id="Task Result">Expected outcome</variable>
+    <variable id="Task Example">Example</variable>
+    <variable id="Task Postreq">What to do next</variable>
+
+<!-- headings -->
+  <!-- The heading to put at the top of the Table of Contents -->
+  <variable id="Table of Contents">Table of Contents</variable>
+  <!-- to override the menucascade separator from > to -> -->
+  <variable id="#menucascade-separator"> &#x2192; </variable>
+
+
+</vars>

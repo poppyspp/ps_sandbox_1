@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project>
+   <target name="sand-pdfs" extensionOf="build">
+      <build-matching-docs transtype="nswtc-pdf" includes="*.ditamap"  launch="true"/>
+   </target>
+
+ 
+</project>

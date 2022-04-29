@@ -1,0 +1,75 @@
+<settings
+  xmlns="http://maven.apache.org/settings/1.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemalocation="http://maven.apache.org/settings/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+  <localRepository>/home/jenkins/.m2/repository</localRepository> <!-- this is just the default setting anyway-->
+  <interactiveMode>false</interactiveMode>
+
+<!-- these server settings are needed only during Jenkins builds; they are used to allow the Jenkinsfile to plug in values for ARTIFACTORY username/pw during the run
+    although these are not needed for local builds, let's keep them here so we can have the client and server files be the SAME -->
+  <servers>
+    <server>
+      <id>snapshots</id>
+      <configuration>
+        <wagonProvider>httpclient</wagonProvider>
+      </configuration>
+      <username>ARTIFACTORY_USERNAME</username>
+      <password>ARTIFACTORY_PASSWORD</password>
+    </server>
+
+    <server>
+      <id>releases</id>
+      <configuration>
+        <wagonProvider>httpclient</wagonProvider>
+      </configuration>
+      <username>ARTIFACTORY_USERNAME</username>
+      <password>ARTIFACTORY_PASSWORD</password>
+    </server>
+  </servers>
+
+  <profiles>
+    <profile>
+      <id>default</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <repositories>
+        <repository>
+          <id>snapshots</id>
+          <url>https://repo.lab.pl.alcatel-lucent.com/techpubs-mvn-dependencies</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+        </repository>
+      </repositories>
+      <pluginRepositories>
+          <pluginRepository>
+        <id>central</id>
+        <url>https://repo.lab.pl.alcatel-lucent.com/techpubs-mvn-dependencies</url>
+        <snapshots>
+            <enabled>false</enabled>
+        </snapshots>
+          </pluginRepository>
+          <pluginRepository>
+        <id>snapshots</id>
+        <url>https://repo.lab.pl.alcatel-lucent.com/techpubs-mvn-dependencies</url>
+        <releases>
+            <enabled>false</enabled>
+        </releases>
+          </pluginRepository>
+      </pluginRepositories>
+    </profile>
+  </profiles>
+
+
+  <mirrors>
+    <mirror>
+      <id>snapshots</id>
+      <name>snapshots</name>
+      <!-- supplying this mirror url same as the above ones seems dumb, but if not supplied, then it defaults to jcenter-->
+      <url>https://repo.lab.pl.alcatel-lucent.com/techpubs-mvn-dependencies</url>
+      <mirrorOf>external:*</mirrorOf>
+    </mirror>
+  </mirrors>  
+</settings>

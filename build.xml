@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="dita-test" default="main" basedir=".">
+
+  <!-- specify which infocenter to publish to -->
+  <property name="infocenter" value="sandbox"/>
+
+
+  <!-- main target is built on server builds -->
+  <!-- every target that builds documents should depend on the 'init' target -->
+  <target name="main" depends="init,ting,shrinal">
+
+  </target>
+
+  <!-- here's a target to build several pdfs-->
+  <target name="pdf" depends="init">
+    <!-- one build-doc line per output-->
+    <build-doc transtype="nswtc-pdf" mappath="path/from/project/root/to/file1.ditamap" docname="output-file-name1"/>
+    <build-doc transtype="nswtc-pdf" mappath="path/from/project/root/to/file2.ditamap" docname="output-file-name2"/>
+
+  </target>
+
+
+  <!-- target named with "Ting" -->
+  <target name="ting" depends="init">
+    <build-doc transtype="nswtc-pdf" mappath="content/ting.ditamap" docname="ting-book" />
+    <build-doc transtype="nswtc-eclipsehelp" mappath="content/ting.ditamap" docname="ting-book"  publish="dropins" />
+  </target>
+  <target name="shrinal" depends="init">
+    <build-doc transtype="nswtc-pdf" mappath="content/Shrinal.ditamap" docname="shrinal-book" />
+    <build-doc transtype="nswtc-eclipsehelp" mappath="content/Shrinal.ditamap" docname="shrinal-book" publish="dropins"/>
+  </target>
+
+
+
+
+
+
+  <!-- Import main build file from target-->
+  <import file="target/scripts/main-build.xml"/>
+
+</project>

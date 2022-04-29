@@ -1,0 +1,14 @@
+@Library('NSWTCHarmonizedPipeline')
+import NSWTC_harmonized_pipeline
+
+def customPipelineParameters = [
+    myRepository: "NSWTC/dt-sandbox1",
+    myBranch: "master",
+	useGerritReviews: false,
+    manualTriggerOnly: false,
+	customPreBuildExtension: { echo "this is run before each build" },
+    customPostAlwaysExtension: { echo "this is run after each build" },
+    customPostSuccessExtension: { echo "this is run after each successful build" }
+]
+
+NSWTC_harmonized_pipeline(customPipelineParameters)
