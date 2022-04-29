@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE task PUBLIC "-//NSN//DTD DITA Task//EN" "nsntask.dtd">
+				<task CreatedForRelease="CMM22" rev="CMM22" id="task_kmn_wjc_jtb"><title>Configuring SMS lawful interception support</title><shortdesc>Use command <cmdname>liconf lic</cmdname> for LI configuration and            <cmdname>liconf liParams</cmdname> to configure SMS lawful interception        support.</shortdesc><prolog><author>PEIPEI SHANG</author></prolog><taskbody><steps><step><cmd>Configure first used LI configuration.</cmd><stepxmp>                    <codeblock>liconf lic create --licIndex 1 --licId 1 --licIp 172.16.49.45 --licSpec LIPv2
++-------------+--------------+
+|   config    |    value     |
++-------------+--------------+
+| licIndex    | 1            |
+| licId       | 1            |
+| licIp       | 172.16.49.45 |
+| licSpec     | LIPv2        |
+| licUserId   |              |
+| licPassword |              |
+| cmmUserId   |              |
+| cmmPassword |              |
+| adminState  | unlocked     |
+| lieAct      | false        |
++-------------+--------------+
+</codeblock>                </stepxmp></step><step><cmd>Configure LIC (ASN.1 LI interface type only).</cmd><stepxmp>                    <codeblock>liconf lic create --licIndex 1 --licId 1 --licIp 172.16.49.45 --licSpec asn1_v2000
++-------------+--------------+
+|   config    |    value     |
++-------------+--------------+
+| licIndex    | 1            |
+| licId       | 1            |
+| licIp       | 172.16.49.45 |
+| licSpec     | asn1_v2000   |
+| licUserId   |              |
+| licPassword |              |
+| cmmUserId   |              |
+| cmmPassword |              |
+| adminState  | unlocked     |
+| lieAct      | false        |
++-------------+--------------+</codeblock>                </stepxmp></step><step><cmd>Configure LIB (ASN.1 LI interface type only).</cmd><stepxmp>                    <codeblock>liconf lib create --libIndex 1 --licId 1 --libIp 172.16.49.87 --libPort 50001 --libSpec asn1_v2000 --adminState unlocked --linkAct true
++------------+--------------+
+|   config   |    value     |
++------------+--------------+
+| libIndex   | 1            |
+| libIp      | 172.16.49.87 |
+| libPort    | 50001        |
+| libSpec    | asn1_v2000   |
+| licId      | 1            |
+| adminState | unlocked     |
+| linkAct    | true         |
++------------+--------------+
+</codeblock>                </stepxmp></step><step><cmd>Check current configuration for SMS lawful interception support.</cmd><stepxmp>                    <codeblock>liconf liParams list
++----------------------+----------------+
+|    parameterName     | parameterValue |
++----------------------+----------------+
+| liEnableDtFiltering  | false          |
+| mmeRejectAttachTauLi | false          |
+| mmeRejectLiCause     | 14             |
+| smsLiReport          | none           |
+| synchTimer           | 20             |
++----------------------+----------------+
+</codeblock>                </stepxmp></step><step><cmd>Enable SMS lawful interception support when DF2 supports                    receiving SMS over NAS IRI events.</cmd><stepxmp>                    <codeblock>
+liconf liParams modify --parameterName smsLiReport --parameterValue both
++----------------+--------------+
+|     config     |    value     |
++----------------+--------------+
+| parameterName  | smsLiReport  |
+| parameterValue | both         |
++----------------+--------------+
+</codeblock>                </stepxmp><substeps><substep><cmd>Enable SMS lawful interception support when DF2 supports receiving SMS                            only over the SGd interface.</cmd><stepxmp>                            <codeblock>
+liconf liParams modify --parameterName smsLiReport --parameterValue sgd
++----------------+--------------+
+|     config     |    value     |
++----------------+--------------+
+| parameterName  | smsLiReport  |
+| parameterValue | sgd          |
++----------------+--------------+
+</codeblock>                        </stepxmp></substep><substep><cmd>Enable SMS lawful interception support when DF2 supports receiving SMS                            only over the SGs interface.</cmd><stepxmp>                            <codeblock>
+liconf liParams modify --parameterName smsLiReport --parameterValue sgs
++----------------+--------------+
+|     config     |    value     |
++----------------+--------------+
+| parameterName  | smsLiReport  |
+| parameterValue | sgs          |
++----------------+--------------+
+</codeblock>                        </stepxmp></substep></substeps></step><step><cmd>Activate LIE when SMS lawful interception support is                    enabled.</cmd><stepxmp>                    <codeblock>liconf lic modify --lieAct true --licIndex 1
++-------------+--------------+
+|   config    |    value     |
++-------------+--------------+
+| licIndex    | 1            |
+| licId       | 1            |
+| licIp       | 172.16.49.45 |
+| licSpec     | asn1_v2000   |
+| licUserId   |              |
+| licPassword |              |
+| cmmUserId   |              |
+| cmmPassword |              |
+| adminState  | unlocked     |
+| lieAct      | true         |
++-------------+--------------+
+</codeblock>                </stepxmp></step></steps></taskbody></task>

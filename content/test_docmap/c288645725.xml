@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+				<concept status="deleted" id="concept_cwk_wjc_jtb"><title>CMM support for default HTTP2 status code to NAS cause code mapping (Feature        f20012-08)</title><shortdesc>This feature defines a default HTTP2 status code to NAS cause code mapping when an        HTTP2 status code is received with no problem details. </shortdesc><prolog><author>PEIPEI SHANG</author></prolog></concept>

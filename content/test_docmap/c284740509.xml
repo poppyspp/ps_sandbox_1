@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+				<concept id="concept_cgk_wjc_jtb"><title>SGSN support for deciphered Gb signaling for call trace (Feature f52078-01)</title><shortdesc>This feature enhances the subscriber call trace functionality in case of        2G ciphering. SGSN decrypts and displays the ciphered Gb signaling messages at call trace as        properly deciphered and readable Gb packets.</shortdesc><prolog><author>PEIPEI SHANG</author></prolog></concept>

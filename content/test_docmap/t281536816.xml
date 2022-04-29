@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+				<task id="task_pgn_wjc_jtb"><title>Configuring locally configured S-GW/P-GW selection based on IMSI/MSISDN range for inbound        roamers</title><shortdesc>Use the command <cmdname>pgw</cmdname> and the parameter            <parmname>combinedSmfPgwc</parmname> to configure the N26        interworking.</shortdesc><prolog><author>PEIPEI SHANG</author></prolog><taskbody><steps><step><cmd>Enable the locally configured S-GW/P-GW selection based on                    IMSI/MSISDN range for the inbound roamers.</cmd><stepxmp>                    <codeblock expanse="page" scale="90">cmm pgw create --ip 191.100.100.1 --hostName topon.lb1.pgw01.pool1.nodes.epc.mnc012.mnc310.3gppnetwork.org --combinedSmfPgwc true
++-----------------+---------------------------------------------------------------+
+| Field           | Value                                                         |
++-----------------+---------------------------------------------------------------+
+| pgw             | 191.100.100.1                                                 |
+| ip*             | 191.100.100.1                                                 |
+| hostName        | topon.lb1.pgw01.pool1.nodes.epc.mnc012.mnc310.3gppnetwork.org |
+| combinedSmfPgwc | true                                                          |
++-----------------+---------------------------------------------------------------+
+</codeblock>                </stepxmp></step></steps></taskbody></task>

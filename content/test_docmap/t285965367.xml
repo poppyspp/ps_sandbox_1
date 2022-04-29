@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE task PUBLIC "-//NSN//DTD DITA Task//EN" "nsntask.dtd">
+				<task CreatedForRelease="CMM22" id="task_qln_wjc_jtb"><title>Configuring LI purging function with local CLI</title><shortdesc>With <parmname>liPurgeTask</parmname> and <parmname>liPurgeStatus</parmname> parameters of <cmdname>liconf</cmdname> command, it is possible to remove all targets from the CMM based on        LIC ID.</shortdesc><prolog><author>PEIPEI SHANG</author></prolog><taskbody><steps><step><cmd>Start a purge.</cmd><info>The purge removes all targets from the CMM for a specific LIC ID. After that,                    no IRI events or CC data is sent via the X2 interface to the MDF. The ADMF needs                    to re-activate targets after purge.</info><stepxmp>                    <codeblock>liconf liPurgeTask create --licId 1
++-----------------+---------+
+|     config      |  value  |
++-----------------+---------+
+| licId           | 1       |
+| liStatusOfPurge | success |
++-----------------+---------+</codeblock>                </stepxmp></step><step><cmd>Check the status of the purge.</cmd><info>                    <p>Possible values for <parmname>liStatusOfPurge</parmname>:</p>                    <parml><plentry><pt>none</pt><pd>The purge is not ongoing and the target list is                                empty.</pd></plentry><plentry><pt>ongoing</pt><pd>The purge is ongoing.</pd></plentry><plentry><pt>targetList</pt><pd>The CMM has targets for specific a LIC ID and the                                purge is not ongoing.</pd></plentry></parml>                    <note>                        <p>The purge for small number of targets is fast that                            usually <parmname>liStatusOfPurge</parmname> parameter                            shows value none.</p>                        <p>The purge for larger number of targets takes longer time                            and it is possible to see with <parmname>liStatusOfPurge</parmname> parameter that the purge is ongoing.                            Purge of very large number of targets takes about 1 minute.</p>                    </note>                </info><stepxmp>                    <codeblock>liconf liPurgeStatus list --licId 1
++-------+-----------------+
+| licId | liStatusOfPurge |
++-------+-----------------+
+| 1     | none            |
++-------+-----------------+</codeblock>                </stepxmp></step></steps></taskbody></task>

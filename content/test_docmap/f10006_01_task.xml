@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+				<task id="task_stn_wjc_jtb"><title>Configuring release 16 IEF function</title><shortdesc>Use the <cmdname>liconf liParams</cmdname> and <cmdname>liconf amfAdmf</cmdname>        commands to configure release 16 IEF function.</shortdesc><prolog><author>PEIPEI SHANG</author></prolog><taskbody><steps><step><cmd>Configure local IP address and port for the LI_XEM1 interface.</cmd><stepxmp>                    <codeblock>liconf liParams modify --parameterName iefAdmfLocalEndPtIpAddress --parameterValue 172.16.46.24
+liconf liParams modify --parameterName iefAdmfLocalEndPtPort --parameterValue 443</codeblock>                </stepxmp></step><step><cmd>Configure local IP address for the LI_XER interface.</cmd><stepxmp><codeph>liconf liParams modify --parameterName iefIcfLocalEndPtIpAddress                        --parameterValue 172.16.46.25</codeph></stepxmp></step><step><cmd>Configure the remote ADMF IP address and port.</cmd><stepxmp><codeph>liconf amfAdmf create --admfIndex 1 --admfId 1 --admfIp                        172.16.59.196 --admfPort 20103 --poiAct false --enableKeepalive                        false</codeph></stepxmp></step><step><cmd>Configure the ASN.1 specification version for the IEF.</cmd><stepxmp><codeph>liconf amfAdmf modify --admfIndex 1 --asn1Version                        rel16asnv6</codeph></stepxmp></step><step><cmd>Enable the IEF functionality.</cmd><stepxmp><codeph>liconf amfAdmf modify --admfIndex 1 --iefAct                    true</codeph></stepxmp></step><step><cmd>Check the ICF.</cmd><stepxmp>                    <codeblock>liconf amfIcf list 
++----------+
+| icfIndex |
++----------+
+| 1        |
++----------+
+</codeblock>                </stepxmp></step><step><cmd>Show the information of ICF.</cmd><stepxmp>                    <codeblock>liconf amfIcf show --icfIndex 1 
++-----------------+--------------------------------------+
+| config          | value                                |
++-----------------+--------------------------------------+
+| icfIndex        | 1                                    |
+| admfId          | 2                                    |
+| icfDid          | 6420aa0f-e5e6-4a32-0000-000000000000 |
+| icfFriendlyName |                                      |
+| icfIp           | 71.2.0.233                           |
+| icfPort         | 10300                                |
++-----------------+--------------------------------------+
+</codeblock>                </stepxmp></step></steps></taskbody></task>

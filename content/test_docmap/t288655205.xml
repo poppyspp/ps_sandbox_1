@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE task PUBLIC "-//NSN//DTD DITA Task//EN" "nsntask.dtd">
+				<task status="deleted" id="task_mrn_wjc_jtb"><title>Configuring LI field debugging enhancements - phase 1</title><shortdesc>With command <cmdname>liconf debugAreas</cmdname>, it is        possible to activate the lawful interception area related debug data logs for        troubleshooting purposes.</shortdesc><prolog><author>PEIPEI SHANG</author></prolog><taskbody><steps-unordered><step><cmd>Configure the debug area.</cmd><info>                    <note>Configure debug areas only based on recommendations from Nokia support                        engineers for short period of time. Unnecessary debug logs may disturb                        normal lawful interception functionality.</note>                </info><substeps><substep><cmd>Activate the debug area.</cmd><info>                            <p>This command starts lawful interception debug support                                for different areas of LI data collection. </p>                            <p>By default, <parmname>debugLiFlags</parmname> is set to value <option>ffffffffffffffff</option>, and the parameter can be set to                                different values.</p>                        </info><stepxmp><codeph>liconf debugAreas create                                --debugLiArea                            admin</codeph><codeblock>+--------------+------------------+
+|    config    |      value       |
++--------------+------------------+
+| debugLiArea  | admin            |
+| debugLiFlags | ffffffffffffffff |
++--------------+------------------+
+</codeblock></stepxmp></substep><substep><cmd>Modify the debug area.</cmd><stepxmp><codeph>liconf debugAreas modify                                --debugLiArea admin --debugLiFlags                            ffff</codeph><codeblock>+--------------+-------+
+|    config    | value |
++--------------+-------+
+| debugLiArea  | admin |
+| debugLiFlags | ffff  |
++--------------+-------+
+</codeblock></stepxmp></substep><substep><cmd>Show the debug area.</cmd><stepxmp><codeph>liconf debugAreas show                                --debugLiArea                            admin</codeph><codeblock>+--------------+------------------+
+|    config    |      value       |
++--------------+------------------+
+| debugLiArea  | admin            |
+| debugLiFlags | ffffffffffffffff |
++--------------+------------------+
+</codeblock></stepxmp></substep><substep><cmd>List the debug area.</cmd><stepxmp><codeph>liconf debugAreas                                list</codeph><codeblock>+-------------+
+| debugLiArea |
++-------------+
+| admin       |
+| df2-cpps    |
+| x1          |
++-------------+
+</codeblock></stepxmp></substep><substep><cmd>Delete the debug area.</cmd><stepxmp><codeph>liconf debugAreas delete                                --debugLiArea                            x1</codeph><codeblock>+--------------+------------------+
+|    config    |      value       |
++--------------+------------------+
+| debugLiArea  | x1               |
+| debugLiFlags | ffffffffffffffff |
++--------------+------------------+
+</codeblock></stepxmp><info>                            <note>                                <p>Delete <cmdname>debugAreas</cmdname> command after debugging is done.                                    Otherwise, the CMM unnecessarily uses debug level logging,                                    instead of using the default error level logging.</p>                            </note>                        </info></substep></substeps></step></steps-unordered></taskbody></task>

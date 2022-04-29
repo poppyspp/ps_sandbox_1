@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="reference">
+    <title>前言</title>
+    <shortdesc>基于OASIS DITA 1.3版本官方文档的中文个人翻译版。</shortdesc>
+    <conbody/>
+    <related-links>
+        <link href="http://docs.oasis-open.org/dita/dita/v1.3/dita-v1.3-part0-overview.html"
+            format="html" scope="external"/>
+    </related-links>
+</concept>
