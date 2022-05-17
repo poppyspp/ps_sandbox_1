@@ -2,53 +2,76 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id="dita_spec_overview">
     <title>DITA规范：概论</title>
-    <shortdesc>DITA 规范提供三个针对不同的受众进行优化的版本， 每个版本都由书面规范、XML 语法文件和 DITA 源代码组成。</shortdesc>
+    <shortdesc>DITA 规范提供三个针对不同的受众进行优化的版本， 每个版本都由写作规范、XML 语法文件和 DITA 源代码组成。</shortdesc>
     <conbody>
         <section id="section_sxc_tc5_dtb">
             <title>版本</title>
             <p>DITA规范提供了三种版本：</p>
             <fig id="fig_dld_jd5_dtb">
                 <title>DITA版本</title>
-                <image href="graphics/dita_editions.png" placement="break" id="image_zcd_kd5_dtb"/>
+                <image href="../graphics/dita_editions.png" placement="break" id="image_zcd_kd5_dtb"/>
             </fig>
+            <dl id="dl_jmh_f4j_jtb">
+                <dlentry>
+                    <dt>基础内容版</dt>
+                    <dd>基础版是针对只对DITA框架最基本部分有需要的应用程序开发人员和用户设计的一个最精简的版本，它包含:<ul id="ul_ix3_5p4_2tb">
+                            <li>topic</li>
+                            <li>map</li>
+                            <li>subject scheme map</li>
+                        </ul></dd>
+                </dlentry>
+                <dlentry>
+                    <dt>技术内容版</dt>
+                    <dd>技术内容版是一个的中型版本，它为使用信息输入和记录复杂应用程序和设备（如软件、硬件、医疗设备、机械等）的作者设计，涵盖了DITA框架基础构架和文档工程师通常使用的专业化内容：<ul
+                            id="ul_i43_tp4_2tb">
+                            <li>
+                                <p>concept</p>
+                            </li>
+                            <li>
+                                <p>task</p>
+                            </li>
+                            <li>
+                                <p>reference topics</p>
+                            </li>
+                            <li>
+                                <p>machine industry task</p>
+                            </li>
+                            <li>
+                                <p>troubleshooting topic</p>
+                            </li>
+                            <li>
+                                <p>bookmap</p>
+                            </li>
+                            <li>
+                                <p>glossaries</p>
+                            </li>
+                            <li>
+                                <p>classification map</p>
+                            </li>
+                        </ul></dd>
+                </dlentry>
+                <dlentry>
+                    <dt>完整内容版</dt>
+                    <dd>完整内容版是最大的一个版本。它适用于对完整的OASIS认证规范有需求的用户，以及开发学习和培训材料的用户。这个版本涵盖了基础架构、技术内容以及培训规范。</dd>
+                </dlentry>
+            </dl>
         </section>
         <section id="section_qw2_pn4_2tb">
-            <title>基础版</title>
-            <p>基础版是针对只对DITA框架最基本部分有需要的应用程序开发人员和用户设计的一个最精简的版本，它包含:<ul id="ul_ix3_5p4_2tb">
-                    <li>topic</li>
-                    <li>map</li>
-                    <li>subject scheme map</li>
-                </ul></p>
+            <title>XML语法文件</title>
+            <p>DITA 词汇模块和 DITA 文档类型的 DITA 标记可用于多种 XML 语言：</p>
+            <ul id="ul_pfy_44j_jtb">
+                <li>RELAX NG (RNG)</li>
+                <li>XML文档类型定义 (DTD) </li>
+                <li>W3C XML纲要 (XSD)</li>
+            </ul>
+            <p>通常而言，文件应该定义相同的DITA元素，如果存在差异，则以RELAX NG为准。</p>
         </section>
         <section id="section_plx_m44_2tb">
-            <title>技术内容版</title>
-            <p>技术内容版是一个的中型版本，它涵盖了DITA框架基础构架和文档工程师通常使用的专业化内容：</p>
-            <ul id="ul_i43_tp4_2tb">
-                <li>
-                    <p>concept</p>
-                </li>
-                <li>
-                    <p>task</p>
-                </li>
-                <li>
-                    <p>reference topics</p>
-                </li>
-                <li>
-                    <p>machine industry task</p>
-                </li>
-                <li>
-                    <p>troubleshooting topic</p>
-                </li>
-                <li>
-                    <p>bookmap</p>
-                </li>
-                <li>
-                    <p>glossaries</p>
-                </li>
-                <li>
-                    <p>classification map</p>
-                </li>
-            </ul>
+            <title>DITA写作规范</title>
+            <p/>
+        </section>
+        <section id="section_r5c_hnj_jtb">
+            <title/>
         </section>
     </conbody>
 </concept>

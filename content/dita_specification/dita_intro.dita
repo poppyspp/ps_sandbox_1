@@ -2,6 +2,6 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id="dita_1_3">
     <title>DITA 1.3 简介</title>
-    <shortdesc>达尔文信息类型化体系结构（以下简称为DITA）规范定义了一种用于创作和管理面向主题的信息的文档类型。它同时也提供了一种用于组合、扩展和约束文档类型的机制。</shortdesc>
+    <shortdesc>达尔文信息类型化体系结构（以下简称为DITA）规范定义了一种用于创作和组织面向主题的信息的文档类型，以及一种用于组合、扩展和约束文档类型的机制。</shortdesc>
     <conbody/>
 </concept>

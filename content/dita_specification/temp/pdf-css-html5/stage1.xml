@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:opentopic-index="http://www.idiominc.com/opentopic/index" cascade="merge" class="- map/map " ditaarch:DITAArchVersion="1.3" domains="(map mapgroup-d) (topic abbrev-d) (topic delay-d) a(props deliveryTarget) (map ditavalref-d) (map glossref-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" specializations="@props/deliveryTarget" xtrc="map:1;3:6" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita.ditamap"><opentopic:map xmlns:opentopic="http://www.idiominc.com/opentopic" xmlns:ot-placeholder="http://suite-sol.com/namespaces/ot-placeholder">
+    <title class="- topic/title " xtrc="title:1;4:12" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita.ditamap">达尔文信息类型化体系结构（DITA）</title>
+    <topicmeta class="- map/topicmeta " xtrc="topicmeta:1;5:16" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita.ditamap">
+        <othermeta class="- topic/othermeta " content="1-0" name="Issue" xtrc="othermeta:1;6:48" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita.ditamap"/>
+    </topicmeta>
+    <topicref class="- map/topicref " first_topic_id="#unique_1" href="#unique_1" id="unique_1" ohref="reference.dita" type="concept" xtrc="topicref:1;8:53" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita.ditamap"><topicmeta class="- map/topicmeta " data-topic-id="reference"><resourceid appid="reference" class="- topic/resourceid " oxy-source="topic"/><navtitle class="- topic/navtitle ">前言</navtitle><?ditaot gentext?><linktext class="- map/linktext ">前言</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">基于OASIS DITA 1.3版本官方文档的中文个人翻译版。</shortdesc></topicmeta></topicref>
+    <topicref class="- map/topicref " first_topic_id="#unique_2" href="#unique_2" id="unique_2" ohref="dita_intro.dita" type="concept" xtrc="topicref:2;9:53" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita.ditamap"><topicmeta class="- map/topicmeta " data-topic-id="dita_1_3"><resourceid appid="dita_1_3" class="- topic/resourceid " oxy-source="topic"/><navtitle class="- topic/navtitle ">DITA 1.3 简介</navtitle><?ditaot gentext?><linktext class="- map/linktext ">DITA 1.3 简介</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">达尔文信息类型化体系结构（以下简称为DITA）规范定义了一种用于创作和管理面向主题的信息的文档类型。它同时也提供了一种用于组合、扩展和约束文档类型的机制。</shortdesc></topicmeta><topicref class="- map/topicref " first_topic_id="#unique_3" href="#unique_3" id="unique_3" ohref="dita_spec_overview.dita" type="concept" xtrc="topicref:3;10:66" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita.ditamap"><topicmeta class="- map/topicmeta " data-topic-id="dita_spec_overview"><resourceid appid="dita_spec_overview" class="- topic/resourceid " oxy-source="topic"/><navtitle class="- topic/navtitle ">DITA规范：概论</navtitle><?ditaot gentext?><linktext class="- map/linktext ">DITA规范：概论</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">DITA 规范提供三个针对不同的受众进行优化的版本， 每个版本都由书面规范、XML 语法文件和 DITA 源代码组成。</shortdesc></topicmeta></topicref></topicref>
+</opentopic:map><concept class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.3" domains="(topic concept) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" id="unique_1" oid="reference" specializations="@props/deliveryTarget" xtrc="concept:1;3:25" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/reference.dita">
+    <title class="- topic/title " xtrc="title:1;4:12" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/reference.dita">前言</title>
+    <shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;5:16" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/reference.dita">基于OASIS DITA 1.3版本官方文档的中文个人翻译版。</shortdesc>
+    <conbody class="- topic/body  concept/conbody " xtrc="conbody:1;6:15" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/reference.dita"/>
+    <related-links class="- topic/related-links " xtrc="related-links:1;7:20" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/reference.dita">
+        <link class="- topic/link " format="html" href="http://docs.oasis-open.org/dita/dita/v1.3/dita-v1.3-part0-overview.html" scope="external" xtrc="link:1;9:45" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/reference.dita"/>
+    </related-links>
+</concept><concept class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.3" domains="(topic concept) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" id="unique_2" oid="dita_1_3" specializations="@props/deliveryTarget" xtrc="concept:1;3:24" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_intro.dita">
+    <title class="- topic/title " xtrc="title:1;4:12" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_intro.dita">DITA 1.3 简介</title>
+    <shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;5:16" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_intro.dita">达尔文信息类型化体系结构（以下简称为DITA）规范定义了一种用于创作和管理面向主题的信息的文档类型。它同时也提供了一种用于组合、扩展和约束文档类型的机制。</shortdesc>
+    <conbody class="- topic/body  concept/conbody " xtrc="conbody:1;6:15" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_intro.dita"/>
+<concept class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.3" domains="(topic concept) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" id="unique_3" oid="dita_spec_overview" specializations="@props/deliveryTarget" xtrc="concept:1;3:34" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_spec_overview.dita">
+    <title class="- topic/title " xtrc="title:1;4:12" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_spec_overview.dita">DITA规范：概论</title>
+    <shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;5:16" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_spec_overview.dita">DITA 规范提供三个针对不同的受众进行优化的版本， 每个版本都由书面规范、XML 语法文件和 DITA 源代码组成。</shortdesc>
+    <conbody class="- topic/body  concept/conbody " xtrc="conbody:1;6:14" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_spec_overview.dita">
+        <section class="- topic/section " id="unique_3_Connect_42_section_sxc_tc5_dtb" xtrc="section:1;7:43" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_spec_overview.dita">
+            <title class="- topic/title " xtrc="title:2;8:20" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_spec_overview.dita">版本</title>
+            <p class="- topic/p " xtrc="p:1;9:16" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_spec_overview.dita">DITA规范提供了三种版本：</p>
+            <fig class="- topic/fig " id="unique_3_Connect_42_fig_dld_jd5_dtb" xtrc="fig:1;10:39" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_spec_overview.dita">
+                <title class="- topic/title " xtrc="title:3;11:24" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_spec_overview.dita">DITA版本</title>
+                <image class="- topic/image " href="graphics/dita_editions.png" id="unique_3_Connect_42_image_zcd_kd5_dtb" placement="break" xtrc="image:1;12:100" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_spec_overview.dita"/>
+            </fig>
+        </section>
+        <section class="- topic/section " id="unique_3_Connect_42_section_qw2_pn4_2tb" xtrc="section:2;15:43" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_spec_overview.dita">
+            <title class="- topic/title " xtrc="title:4;16:20" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_spec_overview.dita">基础版</title>
+            <p class="- topic/p " xtrc="p:2;17:16" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_spec_overview.dita">基础版是针对只对DITA框架最基本部分有需要的应用程序开发人员和用户设计的一个最精简的版本，它包含:<ul class="- topic/ul " id="unique_3_Connect_42_ul_ix3_5p4_2tb" xtrc="ul:1;17:90" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_spec_overview.dita">
+                    <li class="- topic/li " xtrc="li:1;18:25" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_spec_overview.dita">topic</li>
+                    <li class="- topic/li " xtrc="li:2;19:25" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_spec_overview.dita">map</li>
+                    <li class="- topic/li " xtrc="li:3;20:25" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_spec_overview.dita">subject scheme map</li>
+                </ul></p>
+        </section>
+        <section class="- topic/section " id="unique_3_Connect_42_section_plx_m44_2tb" xtrc="section:3;23:43" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_spec_overview.dita">
+            <title class="- topic/title " xtrc="title:5;24:20" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_spec_overview.dita">技术内容版</title>
+            <p class="- topic/p " xtrc="p:3;25:16" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_spec_overview.dita">技术内容版是一个的中型版本，它涵盖了DITA框架基础构架和文档工程师通常使用的专业化内容：</p>
+            <ul class="- topic/ul " id="unique_3_Connect_42_ul_i43_tp4_2tb" xtrc="ul:2;26:37" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_spec_overview.dita">
+                <li class="- topic/li " xtrc="li:4;27:21" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_spec_overview.dita">
+                    <p class="- topic/p " xtrc="p:4;28:24" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_spec_overview.dita">concept</p>
+                </li>
+                <li class="- topic/li " xtrc="li:5;30:21" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_spec_overview.dita">
+                    <p class="- topic/p " xtrc="p:5;31:24" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_spec_overview.dita">task</p>
+                </li>
+                <li class="- topic/li " xtrc="li:6;33:21" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_spec_overview.dita">
+                    <p class="- topic/p " xtrc="p:6;34:24" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_spec_overview.dita">reference topics</p>
+                </li>
+                <li class="- topic/li " xtrc="li:7;36:21" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_spec_overview.dita">
+                    <p class="- topic/p " xtrc="p:7;37:24" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_spec_overview.dita">machine industry task</p>
+                </li>
+                <li class="- topic/li " xtrc="li:8;39:21" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_spec_overview.dita">
+                    <p class="- topic/p " xtrc="p:8;40:24" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_spec_overview.dita">troubleshooting topic</p>
+                </li>
+                <li class="- topic/li " xtrc="li:9;42:21" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_spec_overview.dita">
+                    <p class="- topic/p " xtrc="p:9;43:24" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_spec_overview.dita">bookmap</p>
+                </li>
+                <li class="- topic/li " xtrc="li:10;45:21" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_spec_overview.dita">
+                    <p class="- topic/p " xtrc="p:10;46:24" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_spec_overview.dita">glossaries</p>
+                </li>
+                <li class="- topic/li " xtrc="li:11;48:21" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_spec_overview.dita">
+                    <p class="- topic/p " xtrc="p:11;49:24" xtrf="file:/C:/GIT/ps_sandbox_1/content/dita_specification/dita_spec_overview.dita">classification map</p>
+                </li>
+            </ul>
+        </section>
+    </conbody>
+</concept></concept><opentopic-index:index.groups/></map>
