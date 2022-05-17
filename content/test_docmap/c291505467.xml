@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
-				<concept id="concept_x3l_wjc_jtb"><title>MME support for CSG ID enhancements (Feature f10906-03)</title><shortdesc>With this feature, the MME supports up to 10 CSG IDs from the subscription data. This        change is reflected in all the messages in the CSG subscription data from the HSS like the        ULA, IDR or DSR.</shortdesc><prolog><author>PEIPEI SHANG</author></prolog></concept>
