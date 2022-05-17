@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+				<task id="task_udn_wjc_jtb"><title>Configuring EMM and ESM cause code mapping enhancements</title><shortdesc>Use global parameter <parmname>enableProvCc</parmname> to        enable feature <ph outputclass="featname">Provisionable EMM and ESM cause code values            (f10403-01)</ph>, command <cmdname>emmCauseCodeMapping</cmdname>        parameter <parmname>intErrorCreateSessRespUserAuthFail</parmname> to        provision the EMM cause code values, command <cmdname>esmCauseCodeMapping</cmdname> parameter <parmname>intErrorUserAuthenticationFailure</parmname> to provision  theESM cause code values,        and command <cmdname>diamNasMappingProfile</cmdname> parameter <parmname>noResponseFromHss</parmname> to provision diameter cause        code.</shortdesc><prolog><author>CAITLIN VIITAMAKI</author></prolog><taskbody><steps><step><cmd>Enable provisionable EMM and ESM cause code values feature.</cmd><stepxmp><codeph>cmm gParms modify --gParmName enableProvCc                        --gParmValue Yes</codeph></stepxmp></step><step><cmd>Provision the EMM cause code values.</cmd><stepxmp><codeph>cmm emmCauseCodeMapping modify 1 --                        intErrorCreateSessRespUserAuthFail 17</codeph></stepxmp></step><step><cmd>Provision the ESM cause code values.</cmd><stepxmp><codeph>cmm esmCauseCodeMapping modify 1 --                        intErrorUserAuthenticationFailure 33 </codeph></stepxmp></step><step><cmd>Check current EMM cause code values.</cmd><stepxmp>                    <codeblock>cmm emmCauseCodeMapping show 1 
++--------------------------------------------+--------+ 
+| Field 			         	| Value  | 
++--------------------------------------------+--------+ 
+| emmCauseCodeMapping 		  	| 1      |
+| emmCauseCodeMappingId* 		      | 1      | 
+| intErrorBearerSetupFailed 		   | 19     | 
+| intErrorServiceDenied 			| 19     | 
+| intErrorIpv6OnlyAllowed 		     | 19     | 
+| intErrorIpv4OnlyAllowed 		     | 19     | 
+| intErrorNoApnAllowedByHss		    | 19     | 
+| intErrorNoRespFromSgwAttPdn 		 | 19     |	 
+| intErrorNoRespFromSgwTau 		    | 10     | 
+| intErrorIpVerMismatchAtt 	    	| 19     | 
+| intErrorIpVerMismatchSvc 	    	| 17     | 
+| intErrorIpVerMismatchTau 	    	| 17     | 
+| intErrorOptIeInc 		     	| 19     | 
+| intErrorSystemFailure 			| 19     | 
+| intErrorMandIeInc 		    	| 19     |
+| intErrorSmcFailed 		    	| 3      | 
+| intErrorCreateSessRespUserAuthFail         | 17     |
++--------------------------------------------+--------+
+</codeblock>                </stepxmp></step><step><cmd>Provision Diameter cause code.</cmd><stepxmp><codeph>cmm diamNasMappingProfile modify                        default -–noResponseFromHss 17</codeph></stepxmp></step></steps></taskbody></task>

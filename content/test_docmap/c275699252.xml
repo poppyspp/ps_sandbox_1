@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+				<concept id="concept_dvj_wjc_jtb"><title>SGSN support for 512 direct tunnel APNs (Feature f51028-01)</title><shortdesc>With this feature, the maximum number of APNs that can be provisioned as eligible for        direct tunnel increases from 254 to 512. The maximum count of APN list is extended from 254        (DT and non-DT) to 766 (512 DT and 254 non-DT).</shortdesc><prolog><author>PEIPEI SHANG</author></prolog></concept>

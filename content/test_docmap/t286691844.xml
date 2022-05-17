@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE task PUBLIC "-//NSN//DTD DITA Task//EN" "nsntask.dtd">
+				<task id="task_t4n_wjc_jtb"><title>Configuring extend purge timer</title><shortdesc>Use timer <parmname>iotPurgeTimer</parmname> to enable or disable the extend purge        timer.</shortdesc><prolog><author>PEIPEI SHANG</author></prolog><taskbody><steps><step><cmd>Check the value of the IoT purge timer on the MME.</cmd><info>The default value is 0, and the                        <parmname>iotPurgeTimer</parmname> is disabled.</info><stepxmp>                    <codeblock>cmm timer show --timer iotPurgeTimer
++------------+---------------+
+| Field      | Value         |
++------------+---------------+
+| timer      | iotPurgeTimer |
+| timerName* | iotPurgeTimer |
+| timerValue | 0             |
+| timerUnit  | Hour          |
++------------+---------------+
+</codeblock>                </stepxmp></step><step><cmd>Enable the IoT purge timer.</cmd><stepxmp>                    <codeblock>cmm timer modify --timerName iotPurgeTimer --timerValue 240
++------------+---------------+
+| Field      | Value         |
++------------+---------------+
+| timer      | iotPurgeTimer |
+| timerName* | iotPurgeTimer |
+| timerValue | 240           |
+| timerUnit  | Hour          |
++------------+---------------+
+</codeblock>                </stepxmp></step><step><cmd>Disable the IoT purge timer by setting the value back to 0.</cmd><stepxmp>                    <codeblock>cmm timer modify --timerName iotPurgeTimer --timerValue 0
++------------+---------------+
+| Field      | Value         |
++------------+---------------+
+| timer      | iotPurgeTimer |
+| timerName* | iotPurgeTimer |
+| timerValue | 0             |
+| timerUnit  | Hour          |
++------------+---------------+ 
+</codeblock>                </stepxmp></step></steps></taskbody></task>

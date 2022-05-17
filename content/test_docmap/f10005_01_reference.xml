@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_dml_wjc_jtb">
+    <title>AMF support for update timer data type to match 3GPP specifications (Feature f10005-01):
+        feature summary</title>
+    <shortdesc>This feature updates the timer data types to match the 3GPP
+        specification.</shortdesc>
+    <refbody>
+        <table frame="all">
+            <title>AMF support for update timer data type to match 3GPP specifications: feature
+                summary</title>
+            <tgroup cols="2">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="2.77*"/>
+                <thead>
+                    <row>
+                        <entry>Function</entry>
+                        <entry>Impact</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Compliance</entry>
+                        <entry>None</entry>
+                    </row>
+                    <row>
+                        <entry>Capacity</entry>
+                        <entry>None</entry>
+                    </row>
+                    <row>
+                        <entry>Required features</entry>
+                        <entry>None</entry>
+                    </row>
+                    <row>
+                        <entry>Interworking/dependent features</entry>
+                        <entry>None</entry>
+                    </row>
+                    <row>
+                        <entry>Restrictions</entry>
+                        <entry>None</entry>
+                    </row>
+                    <row>
+                        <entry>Configuration management</entry>
+                        <entry>
+                            <p>Command <cmdname
+                                    >amfNasTimers</cmdname>, parameters <parmname
+                                    >amfTimerUnit</parmname>, <parmname
+                                    >amfTimerValue</parmname>, <parmname
+                                    >t3502</parmname>, <parmname>t3512</parmname>
+                                and <parmname
+                                    >non3gppAccessDeregistrationTimer</parmname></p>
+                            <p>Command <cmdname
+                                    >amfMobilityTimers</cmdname>, parameter <parmname>amfTimerUnit</parmname></p>
+                            <p>Command <cmdname
+                                    >amfRanTimers</cmdname>, parameter <parmname
+                                    >amfTimerUnit</parmname></p>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Counters</entry>
+                        <entry>None</entry>
+                    </row>
+                    <row>
+                        <entry>Alarms</entry>
+                        <entry>None</entry>
+                    </row>
+                    <row>
+                        <entry>Feature ID</entry>
+                        <entry>f10005-01</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </refbody>
+</reference>

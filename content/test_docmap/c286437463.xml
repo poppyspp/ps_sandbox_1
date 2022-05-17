@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+				<concept status="deleted" id="concept_lqk_wjc_jtb"><title>SGSN support for enhance Gn/S3 message size - transparent container limit (Feature        f11820-01) </title><shortdesc>This feature increases the transparent container IE size carried in the Forward        Relocation Request message from 4000 bytes to 8000 bytes.</shortdesc><prolog><author>PEIPEI SHANG</author></prolog></concept>

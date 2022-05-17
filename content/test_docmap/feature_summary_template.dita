@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="feature_summary_template">
+  <title>Feature summary table template</title>
+  <shortdesc>Short reference description.</shortdesc>
+  <refbody>
+    <table>
+      <title/>
+      <tgroup cols="2">
+        <colspec/>
+        <colspec/>
+        <thead>
+          <row>
+            <entry>Function</entry>
+            <entry>Impact</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>Compliance</entry>
+            <entry>None</entry>
+          </row>
+          <row>
+            <entry>Capacity</entry>
+            <entry>None</entry>
+          </row>
+          <row>
+            <entry>Required features</entry>
+            <entry>None</entry>
+          </row>
+          <row>
+            <entry>Interworking/dependent features</entry>
+            <entry>None</entry>
+          </row>
+          <row>
+            <entry>Restrictions</entry>
+            <entry>None</entry>
+          </row>
+          <row>
+            <entry>Configuration management</entry>
+            <entry/>
+          </row>
+          <row>
+            <entry>Counters</entry>
+            <entry>None</entry>
+          </row>
+          <row>
+            <entry>Alarms</entry>
+            <entry>None</entry>
+          </row>
+          <row>
+            <entry>Feature ID</entry>
+            <entry/>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </refbody>
+</reference>
