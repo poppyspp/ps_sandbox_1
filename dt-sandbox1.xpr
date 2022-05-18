@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="19.1">
+<project>
     <meta>
         <filters directoryPatterns="" filePatterns="publish.properties" positiveFilePatterns="" showHiddenFiles="true"/>
         <options>
-            <serialized version="19.1" xml:space="preserve">
+            <serialized xml:space="preserve">
                 <serializableOrderedMap>
                     <entry>
                         <String>enable.project.master.files.support</String>
@@ -14,6 +14,7 @@
                         <String-array>
                             <String>https://raw.githubusercontent.com/oxygenxml/Oxygen-Git-Plugin/master/build/addon.xml</String>
                             <String>http://nswtc.motivelabs.us.alcatel-lucent.com/oxygen/updatesite.xml</String>
+                            <String>https://www.oxygenxml.com/InstData/Addons/default/updateSite.xml</String>
                         </String-array>
                     </entry>
                     <entry>
@@ -376,6 +377,10 @@
                     <entry>
                         <String>key.custom.editor.variables.option.pane</String>
                         <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
+                        <String>key.editor.save.option.pane</String>
+                        <Boolean>false</Boolean>
                     </entry>
                     <entry>
                         <String>key.extensions.update.site.option.pane</String>
