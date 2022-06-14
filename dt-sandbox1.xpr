@@ -391,6 +391,10 @@
                         <Boolean>true</Boolean>
                     </entry>
                     <entry>
+                        <String>keys.context</String>
+                        <String>file:/C:/GIT/cmm/content/m291530507.ditamap</String>
+                    </entry>
+                    <entry>
                         <String>user.defined.editor.variables</String>
                         <userEditorVariable-array>
                             <userEditorVariable>

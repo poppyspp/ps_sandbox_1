@@ -68,10 +68,33 @@
         </section>
         <section id="section_plx_m44_2tb">
             <title>DITA写作规范</title>
-            <p/>
+            <p>该规范是为 DITA 标准的实现者编写的，包括工具开发人员和开发专业化的 XML 架构师。 该文档包含以下几个部分：</p>
+            <ul id="ul_lxb_3xx_qtb">
+                <li>介绍</li>
+                <li>架构规范</li>
+                <li>语言参考</li>
+                <li>一致性声明</li>
+                <li>附录</li>
+            </ul>
+            <p>DITA 书面规范有以下几种格式：</p>
+            <ul id="ul_pnb_1by_qtb">
+                <li>XHTML（可从 OASIS 网站获得，这是DITA书面规范的权威版本）</li>
+                <li>CHM</li>
+                <li>PDF</li>
+                <li>DITA 源</li>
+                <li>XHTML 的 ZIP（针对本地使用进行了优化）</li>
+            </ul>
         </section>
         <section id="section_r5c_hnj_jtb">
-            <title/>
+            <title>术语</title>
+            <p>本文档中的关键词包括：“必须”、“不得”、“要求”、“应”、“不应”、“应该”、“不应”、“推荐”、“可以”和“可选”。这些关键词的描述是基于 [RFC 2119]
+                作出的解释。</p>
+            <parml id="parml_sqc_gcy_qtb">
+                <plentry>
+                    <pt>必须</pt>
+                    <pd>也包括“要求”或“应</pd>
+                </plentry>
+            </parml>
         </section>
     </conbody>
 </concept>
